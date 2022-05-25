@@ -1,0 +1,22 @@
+Project 2
+
+Merge Sort Project
+
+[16,21,11,8,12,22] -> Merge Sort
+
+1- Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
+
+  Dizide verilen elemanlar iki parçaya bölünür. Her eleman tek kalana kadar.
+  İlk aşama= [16,21,11] ve [8,12,22]
+  İkinci aşama = [16,21], [11], [8,12] ve [22]
+  Üçüncü aşama = [16], [21], [11], [8], [12] ve [22]
+  Her eleman tek kaldıktan sonra sayılar sıralı olacak şekilde tekrar birleştirilir.
+  Dördüncü aşama = [16,21], [11], [8,12] ve [22]
+  Beşinci aşama = [11,16,21] ve [8,12,22]
+  Altıncı aşama = [8,11,12,16,21,22]
+
+2- Big-O gösterimini yazınız.
+
+  Merge Sort algoritması uygulanmasında dizi n/2 kere bölünmek için ve n/2 kere de birleştirilmek için işlem görür.
+
+  2^x = n ve x = logn oluyor. Bölme ve birleştirme yaparak n işlem yapıyoruz ve bu durumda Big-O Notationumuz O(nlogn) olarak ortaya çıkıyor.
